@@ -13,8 +13,7 @@ const {mongoose} = require('./database')
 //#endregion
 
 //#region ROUTES
-  app.use('/api/employees',require('./routes/employees.routes'))
-  
+  app.use('/api/employees', require('./routes/employees.routes'))  
 //#endregion
 
 app.listen(app.get('port'), () => {
