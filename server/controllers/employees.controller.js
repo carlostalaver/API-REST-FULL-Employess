@@ -13,7 +13,6 @@ employeeCtrl.getEmployee = async (req, res) => {
     res.json(emp)
 }
 employeeCtrl.createEmployee = async ( req, res) => {
-    console.log('---------->',req.body);
     const new_employee = new Employee(req.body);
      const emp_save = await new_employee.save();
     res.json(emp_save);    
